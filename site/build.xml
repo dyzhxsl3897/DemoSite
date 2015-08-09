@@ -84,6 +84,7 @@
         <artifact:mvn mavenHome="${maven.home}" fork="true">
             <jvmarg value="-XX:MaxPermSize=256M" />
             <jvmarg value="-Xmx128M" />
+			<jvmarg value="-Dmaven.multiModuleProjectDirectory=%M2_HOME%" />
             <arg value="tomcat7:shutdown"/>
         </artifact:mvn>
     </target>
