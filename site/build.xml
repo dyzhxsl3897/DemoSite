@@ -18,7 +18,7 @@
     <property name="config.filename" value="${user.name}.properties"/>
     <property file="config/${config.filename}"/>
     <property file="../build.properties"/>
-    <property name="maven.home" value="%M2_HOME%"/>
+	<property name="maven.home" value="$M2_HOME"/>
 	
 	<property name="runtime.environment" value="development"/>
 	
